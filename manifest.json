@@ -1,0 +1,17 @@
+{
+  "name": "Aprenda Ingles",
+  "short_name": "Ingles",
+  "start_url": "https://johnstonpc.github.io/app-ingles/",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "description": "uma aplicação para se decorar novs palavras em ingles",
+  "icons": [
+
+    {
+        "src": "img/ingles.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }
+  ]
+}

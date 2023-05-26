@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funcoes1.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Inglês</title>
+</head>
+
+<body onload="leiaLista()">
+    <!-- <body onload="leiaLista();atrasado()"> -->
+
+
+    <div class="conteiner1" id="Depois">
+        <div class="conteiner2">
+            <div>
+                <p id="conteudoPort"></p>
+            </div>
+            <div>
+                <p id="conteudoIng"></p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="bt2"><div class="contador"></div></div>
+    <div class="bt">
+        <a href="numeros.html">Numeros</a>
+        <a href="cores.html">Cores</a>
+        <p id="volte">🔙</p>
+
+    </div>
+
+   
+</div>
+
+
+
+<button id="install-button" style="display:none;margin-top: 20%;text-align: center;">Instalar</button>
+</main>
+
+
+
+    
+
+
+</body>
+<script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js").then(function(registration) {
+        console.log("Service worker registrado com sucesso:", registration.scope);
+      }).catch(function(error) {
+        console.log("Falha ao registrar o service worker:", error);
+      });
+    } </script>
+
+</html>
