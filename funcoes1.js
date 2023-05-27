@@ -4259,7 +4259,7 @@ function leiaLista() {
     setTimeout(function () {
       document.getElementById("conteudoPort").innerHTML = portugues[incremento];
       document.getElementById("conteudoIng").innerHTML = ingues[incremento];
-    }, 1000 * i);
+    }, 1500 * i);
 
 
     var volte = document.getElementById("volte");
