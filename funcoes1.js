@@ -4259,13 +4259,13 @@ function leiaLista() {
     setTimeout(function () {
       document.getElementById("conteudoPort").innerHTML = portugues[incremento];
       document.getElementById("conteudoIng").innerHTML = ingues[incremento];
-    }, 1500 * i);
+    }, 2000 * i);
 
 
     var volte = document.getElementById("volte");
     volte.addEventListener("click", function(){
     incremento = incremento - 2
-  
+    linhaRoxa = linhaRoxa - 2
     });
 
   }
@@ -4277,7 +4277,7 @@ function leiaListaN() {
     setTimeout(function () {
       document.getElementById("conteudoPort").innerHTML = portuguesN[incremento];
       document.getElementById("conteudoIng").innerHTML = inguesN[incremento];
-    }, 890 * i);
+    }, 1500 * i);
   }
 }
 
