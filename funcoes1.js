@@ -4248,7 +4248,7 @@ var inguesa = [' ',' ',' ',' ','the',
 
 
 
-
+ 
 
   var linhaRoxa = 0
 
@@ -4259,13 +4259,16 @@ function leiaLista() {
     setTimeout(function () {
       document.getElementById("conteudoPort").innerHTML = portugues[incremento];
       document.getElementById("conteudoIng").innerHTML = ingues[incremento];
+      document.getElementById("contando").innerHTML = incremento
     }, 2000 * i);
 
-
+  
     var volte = document.getElementById("volte");
     volte.addEventListener("click", function(){
     incremento = incremento - 2
-    linhaRoxa = linhaRoxa - 2
+    if(incremento<0){
+      incremento = 0
+    }
     });
 
   }
@@ -4273,13 +4276,17 @@ function leiaLista() {
 
 function leiaListaN() {
   for (var i = 0; i < portuguesN.length; i++) {
+
+  
     let incremento = i
     setTimeout(function () {
       document.getElementById("conteudoPort").innerHTML = portuguesN[incremento];
       document.getElementById("conteudoIng").innerHTML = inguesN[incremento];
+      
     }, 1500 * i);
   }
 }
+
 
 
 function leiaListaC() {
