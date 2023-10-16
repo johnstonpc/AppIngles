@@ -4261,8 +4261,18 @@ function leiaLista() {
       document.getElementById("conteudoIng").innerHTML = ingues[incremento];
       document.getElementById("contando").innerHTML = incremento
     }, 2000 * i);
+ 
+    
 
-  
+    var avancar = document.getElementById("ir");
+    avancar.addEventListener("click", function(){
+    incremento = incremento +20
+    if(incremento>portugues.length){
+      incremento = portugues.length
+    }
+    });
+
+
     var volte = document.getElementById("volte");
     volte.addEventListener("click", function(){
     incremento = incremento - 2
@@ -4357,7 +4367,7 @@ document.getElementById("corbranca").style.backgroundColor ='White'
    
     setTimeout(function () {
       document.querySelector('.contador').style.width = linhaRoxa + "px";
-      linhaRoxa+=0.55
+      linhaRoxa+=0.25
       
 
     },1000 * i);
