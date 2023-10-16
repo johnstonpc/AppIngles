@@ -4370,6 +4370,23 @@ document.getElementById("corbranca").style.backgroundColor ='White'
       linhaRoxa+=0.25
       
 
+      var avancar = document.getElementById("ir");
+      avancar.addEventListener("click", function(){
+      linhaRoxa=linhaRoxa+0.5
+     
+      });
+      
+
+  
+
+      var volt = document.getElementById("volte");
+      volt.addEventListener("click", function(){
+      linhaRoxa=linhaRoxa-0.1
+     
+      });
+
+
+
     },1000 * i);
   }
   
