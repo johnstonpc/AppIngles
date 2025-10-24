@@ -4260,7 +4260,7 @@ function leiaLista() {
       document.getElementById("conteudoPort").innerHTML = portugues[incremento];
       document.getElementById("conteudoIng").innerHTML = ingues[incremento];
       document.getElementById("contando").innerHTML = incremento
-    }, 2000 * i);
+    }, 1300 * i);
  
     
 
@@ -4293,7 +4293,7 @@ function leiaListaN() {
       document.getElementById("conteudoPort").innerHTML = portuguesN[incremento];
       document.getElementById("conteudoIng").innerHTML = inguesN[incremento];
       
-    }, 1500 * i);
+    }, 1300 * i);
   }
 }
 
@@ -4424,4 +4424,5 @@ installButton.addEventListener('click', () => {
   });
 });
 }
+
 
