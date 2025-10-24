@@ -4260,7 +4260,7 @@ function leiaLista() {
       document.getElementById("conteudoPort").innerHTML = portugues[incremento];
       document.getElementById("conteudoIng").innerHTML = ingues[incremento];
       document.getElementById("contando").innerHTML = incremento
-    }, 1300 * i);
+    }, 1000 * i);
  
     
 
@@ -4293,7 +4293,7 @@ function leiaListaN() {
       document.getElementById("conteudoPort").innerHTML = portuguesN[incremento];
       document.getElementById("conteudoIng").innerHTML = inguesN[incremento];
       
-    }, 1300 * i);
+    }, 1000 * i);
   }
 }
 
@@ -4353,7 +4353,7 @@ document.getElementById("corbranca").style.backgroundColor ='White'
 }
 
 
-    }, 890 * i);
+    }, 1000 * i);
   }
 }
 
@@ -4424,5 +4424,6 @@ installButton.addEventListener('click', () => {
   });
 });
 }
+
 
 
